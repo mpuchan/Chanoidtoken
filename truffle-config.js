@@ -2,12 +2,17 @@ module.exports = {
 
   networks: {
 
-    ganache: {
+    ganache: {                //development test
       host: "127.0.0.1",     // Localhost (default: none)
       port: 7545,            // Standard Ethereum port (default: none)
       network_id: "*",       // Any network (default: none)
     },
-
+    ropsten: {
+      network_id: 3,
+      host: "localhost",
+      port: 8545,
+      gas: 2900000
+    }
 
   },
 
